@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .2);
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    z-index: 999;
+}
+
+.menu-toggle:hover {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transition: all .4s ease 0s;
+    transform: translateX(250px);
+    
+    z-index: 2;
+    background-color: #1D809F;
+}
+
+#sidebar-wrapper.active {
+    width: 250px;
+    right: 250px;
+    transform: translateX(250px);
+}
+
+.sidebar-nav {
+    position: absolute;
+    list-style: none;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav .sidebar-nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.sidebar-nav .sidebar-nav-item a:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(255, 255, 255, .2);
+}
+
+.sidebar-nav .sidebar-brand {
+    font-size: 1.2rem;
+    background-color: rgba(52, 64, 42,  .1);
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+.sidebar-brand a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.masthead {
+    width: 100%;
+    height: 100vh;
+    background: url('img/bg.jpg') no-repeat center center;
+    align-items: center;
+}
+
+.masthead-title {
+    font-size: 5rem;
+}
+
+.masthead-subtitle {
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 1rem 2rem !important;
+    font-size: 1.2rem !important;
+    font-weight: normal;
+}
