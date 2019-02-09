@@ -1,7 +1,6 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: lightblue;
 }
 
 .menu-toggle {
@@ -93,8 +92,51 @@ html, body {
     font-size: 1.5rem;
 }
 
-button {
+.btn {
     padding: 1rem 2rem !important;
     font-size: 1.2rem !important;
     font-weight: normal;
+}
+
+.intro {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2.2rem;
+}
+
+.intro-subtitle {
+    font-size: 1.3rem;
+}
+
+.intro-subtitle a {
+    color: #000;
+}
+
+.services {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.services-title {
+    font-size: 2.8rem;
+}
+
+.icon-wrapper {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    background-color: #FFF;
+    line-height: 8rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    
 }
